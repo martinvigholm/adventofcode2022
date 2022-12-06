@@ -21,7 +21,7 @@ for ($a = 1; $a < substr(end($boxes), -2) + 1; $a++) {
 // Move the boxes
 foreach ($steps as $current_step) {
 
-    $step_info = preg_match_all('/\d+/', $current_step, $matches);
+    preg_match_all('/\d+/', $current_step, $matches);
     $items_to_move = [];
 
     for ($i = 0; $i < $matches[0][0]; $i++) {
